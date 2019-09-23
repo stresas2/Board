@@ -24,7 +24,7 @@ Kiekvienas klientas aprašomas JSON formato objektu:
     "specialistas": 1, // Kliento pasirinktas specialistas
     "time": null, // Timestamp kada klientas buvo pradėtas aptarnauti
     "finishTime": null, // Laikas per kurį klientas buvo aptarnautas
-    "done": false // Klientas aptarnavimo statusas (false - neaptarnautas, true - aptarnautas)
+    "done": false // Kliento aptarnavimo statusas (false - neaptarnautas, true - aptarnautas)
   }
  ```
  
