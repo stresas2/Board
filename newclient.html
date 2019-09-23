@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Naujas klientas</title>
+  </head>
+  <body>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-10 col-md-12">
+        <div class="bg-light rounded shadow-sm mt-2 mx-2">
+          <div class="p-2">
+            <h3>Numerio išdavimas:</h3>
+            <div class="form-row">
+              <div class="col-sm-12 col-lg-6 p-0 my-1 pr-1">
+                <select class="custom-select" id="specialist">
+                  <option value="0" selected disabled hidden
+                    >Pasirinkite
+                  </option>
+                  <option value="1">1 Specialistas</option>
+                  <option value="2">2 Specialistas</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-lg-6 p-0 my-1">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Jūsų vardas"
+                    id="name"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      onclick="createClient()"
+                    >
+                      Gauti numerį
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="alert" class="text-danger py-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/newclient.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Kliento operacijos</title>
+  </head>
+  <body>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-10 col-md-12">
+        <div class="bg-light rounded shadow-sm mt-2 mx-2">
+          <div class="p-2">
+            <h4 class="mb-3">Laiko tikrinimas:</h4>
+            <div class="form-row">
+              <div class="col-sm-12 col-lg-6 p-0 mt-1 px-1">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Jūsų numeris"
+                    id="number"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      onclick="checkTime.start()"
+                    >
+                      Tikrinti laiką
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-6 p-0 mt-1 px-1">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Laukimo laikas:</span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control bg-white"
+                    id="waitingTime"
+                    readonly="readonly"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="alert" class="text-danger py-2 ml-1"></div>
+            <hr />
+            <h4 class="mb-3">Vizito atšaukimas arba pavėlinimas:</h4>
+            <div class="form-row">
+              <div class="col-12 p-0 my-1 px-1">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Jūsų numeris"
+                    id="number2"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Jūsų kodas"
+                    id="code"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row-reverse">
+              <div>
+                <button
+                  class="btn btn-info btn-sm my-1"
+                  type="button"
+                  onclick="cancel()"
+                >
+                  Atšaukti vizitą
+                </button>
+                <button
+                  class="btn btn-info btn-sm my-1"
+                  type="button"
+                  onclick="lateVisit()"
+                >
+                  Pavėlinti vizitą
+                </button>
+              </div>
+              <div class="mx-3 align-self-center"><div id="alert2"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/checkclient.js"></script>
+  </body>
+</html>
