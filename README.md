@@ -1,5 +1,6 @@
 # Board
 
+NFQ Užduotis <br />
 Numeriukų švieslentė ir jos valdymas<br />
 LIVE LINK: http://board.mygidas.lt/<br />
 FRONT-END dalis (visi duomenys išsisaugo LocalStorage)<br /><br />
