@@ -58,7 +58,7 @@ Veikimas:
 * Dešinėja pusėja pasirinkus specialistą pasileidžia programa ir atspausdinami specialisto klientai lentelėja su jų numeriu ir vardu;
 * Pirmam Klientui lentėja priskiriamas "timestamp" kuomet jis pradedamas aptarnauti ir išsaugojami duomenys LocalStorage;
 * Paspaudus mygtuką "Aptarnauti" nuskaitomas dabartinis laikas ir laikas kada jis buvo pradėtas aptarnauto iš to apskaičiuojamas jo aptarnavimo laikas, kuris atvaizduojamas lentelėja. Kliento duomenys pasipildo aptarnavimo laiku ir aptarnavimo statusu "done: true" ir duomenys išsaugojami LocalStorage - Klientai ir Atlikti;
-* Lentelė perspaudinama įvykus LocalStorage pasikeitimams;
+* Lentelė perspausdinama įvykus LocalStorage pasikeitimams;
 
 ### checkclient.html - Kliento galimos operacijos;
 Veikimas:
