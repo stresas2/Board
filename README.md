@@ -41,7 +41,7 @@ Veikimas:
 * Suskirsto duomenis pagal specialistą;
 * Duomenys atvaizduojami pagal eiliškumą, kuo labiau į viršų tuo greičiau prieis eilę;
 * Pirmas, atvaizduotas kita spalva yra dabar aptarnaujamas;
-* Dešinėja pusėja apskaičiuojamas preleminarus laukimo laikas kiekvienam numeriui. Paimi visi duomenys iš istorijos kuriuos aptarnavimo specialistas ir suskaičiuojamas jų vidurkis ir dauginama iš eilės numerio pas specialistą, jeigu nėra duomenų nustatomas vidutinis laikas 6min;
+* Dešinėja pusėja apskaičiuojamas preleminarus laukimo laikas kiekvienam numeriui. Paimami visi duomenys iš istorijos kuriuos aptarnavimo specialistas ir suskaičiuojamas jų vidurkis ir dauginama iš eilės numerio pas specialistą, jeigu nėra duomenų nustatomas vidutinis laikas 6min;
 
 ### newclient.html - Kliento registraciją;
 
@@ -50,7 +50,7 @@ Veikimas:
 * Visi laukeliai privalo būti užpildyti;
 * Vardas privalo būti sudarytas tik iš raidžių, turi būti vienas žodis ir negalimas vardas - Vardenis;
 * Neatitikus aukščiau išvardintų kriterijų išmetamas pranešimas;
-* Teisingai užpildus sugeneruojamas apsaugos kodas ir aukščias rastas laisvas numeris ir šitie duomenys išmetami pranešime vartotojui;
+* Teisingai užpildus sugeneruojamas apsaugos kodas ir aukščiausias rastas laisvas numeris ir šitie duomenys išmetami pranešime vartotojui;
 
 ### specialist.html - Aptarnaujančio specialisto tinklalapis;
 Veikimas:
@@ -62,7 +62,7 @@ Veikimas:
 
 ### checkclient.html - Kliento galimos operacijos;
 Veikimas:
-* Nuskaito įvestą numeriuką ir nuspaudus "Tikrinti laiką" parodo laukimo laiką, jeigu numeriukas neegzistuoja arba jau buvo aptarnautas išmeta pranešima;
+* Nuskaito įvestą numeriuką ir nuspaudus "Tikrinti laiką" parodo laukimo laiką, jeigu numeriukas neegzistuoja arba jau buvo aptarnautas išmeta pranešimą;
 * Laukimo laikas atnaujinamas kas 5s. Yra virtualus laikrodukas kuris iš suskaičiuoto laukimo laiko atiminėja praėjusį laiką, jeigu numeriukas arba numeriuko eiliškumas pasikeitė laikrodukas nusinuliną ir pradeda iš naujo skaičiuoti, taip duomenys pastoviai atsinaujina priklausomai kaip keičiasi vidutinis specialisto aptarnavimo laikas. Pasidarius laukimo laikui 0 pridedama minutė ir vėl skaičiuojamas, kol klientas prieina eilę;
 * Nuspaudus "Atšaukti vizitą" nuskaitomas įvestas numeriukas ir kodas, patikrinami ar jie sutampa su tais kurie išsaugoti LocalStorage, jeigu ne išmetamas pranešimas, priešingu atveju vizitas atšaukiamas jis ištrinimas iš LocalStorage ir išmetas pranšimas apie sėkmingą atšaukimą;
 * Nuspausdus "Pavėlinti vizitą" Nuskaitomas numeris ir kodas, surandamas jo vizito eiliškumas LocalStorage ir jis perstumiamas žemyn, perstumiant atsižvelgiama, kad būtų perstumiamas būtinai pas jo pasirinktą specialistą, jeigu nėra kur perstumti išmetamas pranešimas, kad jis yra paskutinis eilėja;
