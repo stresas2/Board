@@ -30,7 +30,7 @@ Kiekvienas klientas aprašomas JSON formato objektu:
  
  Duomenys išsaugojami į du LocalStorage kintamuosius:
  * Klientai - Visi įrašai nepriklausomai ar aptarnauti ar ne, atvaizduoti pagal tikrą eiliškumą;
- * Atlikt - Visi aptarnauti klientai;
+ * Atlikti - Tik aptarnauti klientai;
 
 ## Usage
 
